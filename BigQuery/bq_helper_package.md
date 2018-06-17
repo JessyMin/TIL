@@ -150,7 +150,7 @@ df = us_name.query_to_pandas_safe(query,
 
 #### 참고자료
 * <a href="
-https://github.com/SohierDane/BigQuery_Helper/blob/master/bq_helper.py"> Github에 올려진 소스코드
+https://github.com/SohierDane/BigQuery_Helper/blob/master/bq_helper.py"> Github 소스코드
 </a>
 
 * <a href="https://www.kaggle.com/dansbecker/getting-started-with-sql-and-bigquery"> Kaggle 튜토리얼
