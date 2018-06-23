@@ -148,6 +148,12 @@ df = us_name.query_to_pandas_safe(query,
 
 <br>
 
+#### 소소한 L&L
+* `Legacy SQL`은 사용 불가한 듯. 확실하게 확인 필요.
+
+
+<br>
+
 #### 참고자료
 * <a href="
 https://github.com/SohierDane/BigQuery_Helper/blob/master/bq_helper.py"> Github 소스코드
