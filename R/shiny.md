@@ -27,6 +27,11 @@ data <- load(url)
 
 * DT package 사용.
 
+* DT::renderDataTable --> renderDT
+* DT::dataTableOutput --> DTOutput
+* 참고 : https://blog.rstudio.com/2018/03/29/dt-0-4/
+
+
 * DT::
 
 ### 기타
