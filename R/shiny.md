@@ -36,3 +36,32 @@ data <- load(url)
 
 ### 기타
 * req(input$n) : 인풋값이 없어도 UI에 에러메시지를 띄우지 않음.
+
+
+### 텍스트 출력
+```r
+output$yearText <- renderText({
+        sprintf('USA baby names in %s', input$year)
+    })
+```
+
+하지만 paste0을 많이 쓴다.
+```r
+# DataCamp 예제
+output$correlation <- renderText({
+  r <- round(cor(movies[, input$x], movies[, input$y], use="pairwise"), 3)
+  paste0("Correlation = ", r, ". Note: If the relationship between the two variables is not linear, the correlation coefficient will not be meaningful.")
+})
+}
+```
+
+
+### 지정한 컬럼값만 나오게 하기
+
+```r
+output$table1 <- renderDT({
+    DT::datatable(
+        selectedData()[, input$show_vars, drop = FALSE], rownames=FALSE
+    )
+})
+```
