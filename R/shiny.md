@@ -34,8 +34,22 @@ data <- load(url)
 
 * DT::
 
+
+* 테이블 크기 줄이기
+https://stackoverflow.com/questions/31921238/shrink-dtdatatableoutput-size
+
+
+### 테이블에서 값 선택하기
+reactive / observe click
+https://stackoverflow.com/questions/39175099/reading-objects-from-shiny-output-object-not-allowed
+
+
+
 ### 기타
 * req(input$n) : 인풋값이 없어도 UI에 에러메시지를 띄우지 않음.
+
+
+
 
 
 ### 텍스트 출력
@@ -65,3 +79,39 @@ output$table1 <- renderDT({
     )
 })
 ```
+
+
+# 삽질
+
+### Plot 그리기
+이 에러로 정말 오래 헤맸다.
+
+  Reading objects from shinyoutput object not allowed.
+
+  ```r  
+  output$plot1 < renderPlot({
+      d <- selectedData2()
+      #d <- subset(data, name == input$name)
+      p <- ggplot(data=d, aes(year, count)) + geom_line()
+      print(p)
+  })
+
+  ```
+
+  화살표에서 - 가 빠진 거였다.....
+
+
+### Plot 그리기
+
+틀린거
+
+  output$plot1 <- renderPlot({
+    ggplot(selectedData(), aes(year, count)) + geom_line()
+})
+
+
+맞는거
+output$plot1 <- renderPlot({
+    d <- selectedData2()
+    ggplot(data=d, aes(year, count)) + geom_line()
+})
