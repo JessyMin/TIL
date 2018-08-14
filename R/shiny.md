@@ -115,3 +115,46 @@ output$plot1 <- renderPlot({
     d <- selectedData2()
     ggplot(data=d, aes(year, count)) + geom_line()
 })
+
+
+# 인풋하기
+
+### 테스트용 버튼
+, actionButton("name2", "Jessica")
+
+
+### 입력한 이름으로 그래프 그리기
+
+```r
+#Server.R
+
+#입력한 이름으로 상세 테이블 추출
+selectedName1 <- reactive({
+    req(input$name)
+    data <- subset(data, name == input$name & gender == input$gender)
+})
+
+#입력된 이름만 Plot 그리기
+output$plot1 <- renderPlot({
+    d <- selectedName1()
+    y <- as.numeric(input$year)
+    ggplot(data=d, aes(year, count)) + geom_line(col='steelblue') +
+        theme_classic() +
+        geom_vline(aes(xintercept = y), col='grey', alpha=0.6)
+})
+
+```
+
+```r
+#ui.R
+
+#이름 텍스트 인풋받기
+textInput(
+    "name", h3("Type name :"),
+    value = ""   
+)
+
+#Plot 출력
+plotOutput("plot1")
+
+```
