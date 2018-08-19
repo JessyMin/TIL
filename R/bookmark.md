@@ -16,3 +16,9 @@ https://blog.rstudio.com/2015/06/24/dt-an-r-interface-to-the-datatables-library/
 
 * client-side / server-side processing
 https://stackoverflow.com/questions/30746325/how-to-pre-select-rows-in-shiny-dt-datatables
+
+* Shiny에서 데이터 저장하는 7가지 방법
+https://deanattali.com/blog/shiny-persistent-data-storage/
+
+* Style your apps with CSS
+http://shiny.rstudio.com/articles/css.html
