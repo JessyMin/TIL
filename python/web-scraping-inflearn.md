@@ -27,6 +27,21 @@
 
 #### 다음 뉴스기사 제목 가져오기
 
+element를 선택하는 방법들
+
+- 태그의 속성을 사용
+
+```python
+titles = driver.find_elements_by_css_selector("h3[itemprop='headline']")
+```
+
+- 선택자를 사용
+  - 우클릭 -> Copy -> Copy Selector
+```python
+css = "div.bv-content-details-offset-off > div > div > div.bv-content-summary-body-text"
+review_bodies = driver.find_elements_by_css_selector(css)
+```
+
 #### 트위터 사이트 로그인 하기
 - 아이디, 패스워드 입력 필드를 속성으로 찾아낸다.
 - 아이디 값을 입력한다.
