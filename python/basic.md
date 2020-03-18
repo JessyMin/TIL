@@ -17,3 +17,35 @@ next(w_iterator)
 - for 문을 사용하지 않고도 컬렉션을 순회할 수 있음.
 
 참고 : https://wikidocs.net/16068
+
+
+### 리스트 생성하기
+```python
+import pandas as pd
+
+list_keys = ['a', 'b']
+list_values = [['x', 'y'], [1, 2]]
+
+list(zip(list_keys, list_values))
+
+>> [('a', ['x', 'y']), ('b', [1, 2])]
+```
+
+- list(zip(list_1, list_2))
+
+
+### 합집합 / 교집합
+```python
+a = {1, 2, 3}
+b = {4, 5, 6}
+
+a.union(b)
+
+>> {1,2,3,4,5,6}
+```
+교집합
+```python
+a.intersection(b)
+a & b
+
+```
