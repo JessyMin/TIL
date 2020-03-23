@@ -49,3 +49,39 @@ a.intersection(b)
 a & b
 
 ```
+
+
+### 여러 개의 인수를 받을 때, 키워드 인수를 받을 때
+- args = arguments
+- 몇 개가 입력될 지 모르는 경우. 여러 개의 인자를 받고자 할 때.
+- 튜플 형태로 들어와서 출력됨
+
+#### args : 여러 개의 인수를 받을 때
+
+```python
+def make_dict():
+def make_dict(**kwargs):
+    return kwargs
+
+make_dict(a = 1, b = 2)
+
+>> {'a': 1, 'b': 2}
+```
+
+#### kwargs : 키워드 인수를 받을 때
+- kwargs : keyword arguments
+- 딕셔너리 형태로 함수 내부로 전달됨
+
+```python
+def add_many(args):
+def add_many(*args):
+    s = 0
+    for n in args:
+        s += n
+    print(s)
+
+add_many(100, 50, 3)
+
+>> 153
+
+```
