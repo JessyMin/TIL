@@ -19,6 +19,21 @@ next(w_iterator)
 참고 : https://wikidocs.net/16068
 
 
+### range()
+- 역순으로 감소시키려면 단위를 설정해줘야 함
+
+```python
+for x in range(10,0,-1):
+	print(x)
+
+>> 10
+9
+8
+7
+...
+```
+
+
 ### 리스트 생성하기
 ```python
 import pandas as pd
