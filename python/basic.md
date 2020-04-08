@@ -49,7 +49,7 @@ list(zip(list_keys, list_values))
 - list(zip(list_1, list_2))
 
 
-### 합집합 / 교집합
+### 합집합 / 교집합 / 교집합 외의 부분
 ```python
 a = {1, 2, 3}
 b = {4, 5, 6}
@@ -58,12 +58,15 @@ a.union(b)
 
 >> {1,2,3,4,5,6}
 ```
-교집합
+
+- 교집합
 ```python
 a.intersection(b)
 a & b
 
 ```
+- 교집합 외의 부분 : `a.difference(b)`
+
 
 
 ### 여러 개의 인수를 받을 때, 키워드 인수를 받을 때
