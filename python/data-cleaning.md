@@ -18,3 +18,10 @@ print(tips.info())
 tips['tip'] = pd.to_numeric(tips['tip'], errors='coerce')
 ```
   - 에러값은 NaN으로 변환함
+
+
+### 결측값 처리하기
+ - 찾아내기 : `df.isnull()`
+
+ - 다른 값으로 채우기 : `df.fillna('alternative_value')`
+ - 다음의 비결측값으로 채우기 : `df.fillna(method = 'backfill')`
