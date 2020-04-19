@@ -19,3 +19,20 @@ FROM CITY
 WHERE LEFT(name,1) IN ('A', 'E', 'I', 'O', 'U')
 ORDER BY name;
 ```
+
+
+### 특정 텍스트 찾아내기
+ - 대소문자 구분없이 찾기
+```SQL
+SELECT *
+FROM favorite
+WHERE title
+WHERE title ILIKE '%stranger%things%'
+ORDER BY user_id;
+```
+
+
+### 형 변환하기 
+```SQL
+SELECT CAST(match_id AS text)
+```
