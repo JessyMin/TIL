@@ -54,3 +54,11 @@ ORDER BY user_id;
 ```SQL
 SELECT CAST(match_id AS text)
 ```
+
+### 테이블에 열 추가하기
+```SQL
+INSERT INTO  white_wine
+    SELECT style, type, country, price
+    FROM wine
+    WHERE type = 'sparkling'
+```
