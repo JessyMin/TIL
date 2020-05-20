@@ -62,3 +62,10 @@ INSERT INTO  white_wine
     FROM wine
     WHERE type = 'sparkling'
 ```
+
+### 날짜 변경하기
+```SQL
+SELECT reference,
+       due_date + interval '90 days' AS new_date
+FROM invoices;
+```
