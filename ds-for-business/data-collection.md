@@ -21,3 +21,37 @@
 - EU 내의 모든 데이터에 적용됨
 - 개인이 데이터를 컨트롤할 수 있게 하는 목적
 - 보존기간, 비식별화 방법 등
+
+
+## Solicited data
+
+목적
+ - Create marketing collateral
+ - De-risk decision making 의사결정의 리스크 감소
+ - Monitor quality 제품/서비스 품질 모니터링
+
+유형
+ - 서베이
+ - 고객 리뷰
+ - In-app questionnaires 인앱 설문조사
+ - Focus groups (FGI, 좌담회)
+
+타입
+ - Qualitative data 정성 데이터
+  : 대화, 개방형 질문
+  . 가설을 세울 때 좋음
+ - Quantitative data 정량 데이터
+  : 복수응답, rating scale
+  . 객관화, 그래프 등으로 시각화하기 쉬움
+
+NPS(Net Promoter Score)  - “How likely are you to recommend this product or website to a friend or colleague?”
+ - 0~10점 척도
+
+Revealed vs. stated preference
+ - Stated preference : 가설, 주관적
+ - Revealed preference : 행동, 구매
+
+Best practice (Tips for designing questions)
+ - Callibrate : 대상에 대한 관심/선호만 질문하지 말고, 여러 개를 질문해서 값을 비교할 것.
+ - Actionable한 결과를 얻을 수 있는 질문을 할 것
+   . 궁금한 것을 물어보는 게 아니라, 각 질문에 가설이 있어야 함.
