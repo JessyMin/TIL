@@ -1,0 +1,23 @@
+### Dashboards
+- 대시보드 : set of metrics
+- 업데이트 : real time, daily, weekly
+- 그래프의 종류
+    - Line chart(시계열, time-series) : tracking a value over time, historical context를 제공,
+    - Stacked bar chart : tracking over time, compare different segments
+    - Categorical Comparison : 서로 다른 그룹을 비교
+- Highlighting a single number
+    - 오늘 방문자 수 (어제보다 O% 증가)
+- Displaying text
+    -  고객 리뷰 등
+- 만드는 방법
+    - 스프레드시트 : 엑셀, 구글시트
+    - BI Tools : Power BI, Tableau, Looker
+    - Customized tools : R, Shiny, d3.js
+- 대시보드를 요청할 때
+    - 조건  
+        - 여러 번 사용할 것이 확실할 때
+        - 일간/월간 업데이트 필요할 때
+        - 항상 요구사항이 동일할 때
+    - 요구사항 :
+        - Be specific
+        - Specify your use case : 데이터분석가가 그래프 종류를 고를 때 참조
