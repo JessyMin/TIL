@@ -74,3 +74,14 @@
 - 고객 리뷰의 레이블링 (Positive/Negative/Neutral)
 - Form으로부터 텍스트 추출
 - 문장 내의 키워드에 하이라이팅 등
+
+### Data storage and retrieval
+- 데이터 저장
+    - 서버, On-premise cluster
+    - 클라우드 (MS Azure, AWS, Google Cloud 등 - Cloud provider)
+        - 데이터분석, 머신러닝, 딥러닝을 돕는 기능도 제공
+- Types of data storage
+    - Unstructured data : 이메일, 텍스트, 비디오/오디오 파일, 웹페이지, SNS
+      -> Document Database(ex. MongoDB) -> NoSQL
+    - Tabular data :
+      -> Relational Database -> SQL
