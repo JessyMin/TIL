@@ -21,3 +21,17 @@
     - 요구사항 :
         - Be specific
         - Specify your use case : 데이터분석가가 그래프 종류를 고를 때 참조
+
+
+### Ad hoc analysis
+- Ad hoc request의 특징
+  - 일단위/주단위로 반복되지 않는 단일한 요구/질문
+  - 다양한 조직에서 Analytics 팀에 요구
+    - Product, Finance, Engineering, Marketing 등
+- 요구 정의하기
+  - Be specific : 요구하는 데이터가 명확해야 함
+  - Include contexts : 데이터를 필요로 하는 목적, 용도 (도움되는 추가 데이터를 함께 제공 가능. can add helpful information)
+  - Include a priority level and due date : 우선순위와 마감기한
+- Managing ad hoc analysis team
+  - 예측하기 어려움.  Scheduled work에 비해 (A/B 테스트, 대시보드 등)
+  - 전략 : Ticketing system 사용 (Trello, JIRA, Asana)
