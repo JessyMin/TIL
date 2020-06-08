@@ -1,0 +1,12 @@
+### Supervised Machine Learning
+- 머신러닝 : 데이터에 기반한 예측 Predictions
+- Supervised Machine Learning : label과 feature가 있는 데이터
+  - Label : 예측하려는 값
+  - Feature : label을 예측하는 데이터
+- 예시
+  - 추천 시스템
+  - 이메일 주제 optimization
+  - churn prediction : 구독 중지 또는 지속
+- 과정 : Data >> Trained Model >> Prediction (subscribe or churn)
+- Model evaluation
+    - Training set >> Test set
