@@ -50,3 +50,20 @@
     - Word embeddings
         - 유사어끼리 묶어 feature로 만듬
         - 수학적 의미를 가진 feature
+
+
+### Deep Learning and Explainable AI
+- Deep Learning
+    - Neural networks
+    - 복잡한 문제를 해결, 더 많은 데이터 필요
+    - 이미지/텍스트 등 비정형화된 데이터에 좋음
+    - Better for “What?”
+    - 사용하는 경우
+        - Is the training data complex?
+        - Do we have a very large amount of training data?
+        - Does the model need to be predictive or explanatory?
+- Explainable AI
+    - Better for “Why?”
+    - 예를 들어, 구독 취소를 이해하고자 할 때
+        - Prediction : What a customer is likely to do
+        - Explanation : Why a customer is likely to do it
