@@ -35,3 +35,13 @@
     - Unknown, missing
     - WHERE ~ IS NULL
     - WHERE ~ IS NOT NULL
+
+### WHERE
+- WHERE 절에 조건 부여하기
+    - AND
+    - OR
+    - AND와 OR를 같이 쓸 때
+        - OR가 가장 먼저 적용됨
+        - 조건을 괄호로 묶어줘야 함
+- WHERE song LIKE ‘a%’
+    - 특정 문자열로 시작하는 텍스트만 필터링하기
