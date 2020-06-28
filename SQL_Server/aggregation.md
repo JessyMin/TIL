@@ -17,10 +17,26 @@
 
 ### Strings
 
-- LEN( ) : 텍스트의 길이
-- LEFT(column, n) : 해당 텍스트 추출
-- RIGHT(column, n)
+- LEN ( ) : 텍스트의 길이
+- LEFT (column, n) : 해당 텍스트 추출
+- RIGHT (column, n)
 - 중간에서 추출해야 한다면
-- SUBSTRING(url, 12, 5) : 시작점, 추출할 개수
+- SUBSTRING (url, 12, 5) : 시작점, 추출할 개수
 - CHARINDEX (‘a', url) AS char_location : 특정 문자열의 위치를 출력함
-- REPLACE(url, ‘a’, ‘b‘) :  문자열 교체
+  -   CHARINDEX ('Weather', description) : 단어의 위치를 찾을 때도 쓸 수 있음
+- REPLACE (url, ‘a’, ‘b‘) :  문자열 교체
+
+```SQL
+SELECT TOP (10)
+  description,
+  CHARINDEX('Weather', description) AS start_of_string,
+  LEN ('Weather') AS length_of_string,
+  SUBSTRING(
+    description,
+    CHARINDEX('Weather', description)+LEN('Weather'),
+    LEN(description)
+  ) AS additional_description
+FROM
+  grid
+WHERE description LIKE '%Weather%';
+```
