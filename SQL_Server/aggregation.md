@@ -40,3 +40,11 @@ FROM
   grid
 WHERE description LIKE '%Weather%';
 ```
+
+
+### Grouping and Having
+- Grouping
+  - SUM을 하면 자동으로 GROUP BY가 적용됨
+- Having
+  - GROUP BY 한 결과값을 기준으로 필터링
+  - SUM(column_name) > 1000 : 알리아스 안됨
