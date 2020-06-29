@@ -45,6 +45,9 @@ WHERE description LIKE '%Weather%';
 ### Grouping and Having
 - Grouping
   - SUM을 하면 자동으로 GROUP BY가 적용됨
+  - WHERE : applied before GROUP BY and filters on rows
 - Having
   - GROUP BY 한 결과값을 기준으로 필터링
+  - applied after GROUP BY, and filters on the groups or aggregates you created within the query
+  - further restrict the number of rows returned after grouping operation
   - SUM(column_name) > 1000 : 알리아스 안됨
