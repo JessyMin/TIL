@@ -1,0 +1,12 @@
+### Joining tables
+- Relational DB : multiple tables
+- Primary Key
+    - Uniquely identify each row in a table
+    - 컬럼명 : Table name_id
+- Foreign key
+    - to B table :
+    - Join 사용
+- Join
+    - INNER JOIN
+        - Syntax : FROM table_A JOIN table_B ON table_B.foreign_key = table=A.primary_key
+    - OUTER JOIN
