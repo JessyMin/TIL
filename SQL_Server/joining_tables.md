@@ -18,3 +18,22 @@
   - NULL값이 있는 경우까지 포함
   - 모든 row를 매치하여 반환함
   - 매칭되지 않으면 NULL
+- Left Join
+  - return ALL rows in the first table, and any matching rows in the right table.
+
+
+### UNION & UNION ALL
+   - 조건
+  	- Select the same number of columns in the same order
+   	- Columns should have the same data types
+  	- 컬럼명이 다르다면 Alias하기
+  - UNION
+      - 두 테이블은 결합해 한 테이블로 만들 때
+      - Duplicate rows are excluded (합집합)
+  - UNION ALL
+      - Includes duplicate rows
+
+
+
+### etc.
+- WHERE album_id IN (213,214)
