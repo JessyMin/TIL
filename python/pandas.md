@@ -1,3 +1,8 @@
+### 데이터프레임 만들기
+df = pd.DataFrame(columns=['category', 'title', 'favorite', 'price'])
+
+
+
 ### 파일 읽어들이기
 - 엑셀 파일 읽어서 파싱하기
 ```python
@@ -34,6 +39,27 @@ import numpy as np
 np.loadtxt("data.txt", delimiter="\t", dtype="int")
 ```
 
+### 데이터 확인하기
+```python
+df.shape
+df.head()
+df.columns
+
+# 데이터 타입 확인
+df.dtypes
+```
+
+### 데이터 타입 확인
+```python
+# 타입 확인
+df.dtypes
+
+# 숫자형으로 타입 변환
+df['column'] = pd.to_numeric(df['column'], errors='coerce')
+df['column'] = df['column'].astype(int)
+
+
+```
 
 
 ### 텍스트 다루기
@@ -64,7 +90,7 @@ salesman.merge(customer, on='city')[['name_x','name_y','city']]
 ```
 
 - `concat` 이용하기
-  - axis는 
+  - axis는
 ```python
 print(pd.concat([df1, df2], axis=0))
 ```
