@@ -39,25 +39,39 @@ import numpy as np
 np.loadtxt("data.txt", delimiter="\t", dtype="int")
 ```
 
-### 데이터 확인하기
+### 데이터 크기/내용 확인하기
 ```python
 df.shape
 df.head()
 df.columns
 
-# 데이터 타입 확인
-df.dtypes
 ```
 
-### 데이터 타입 확인
+### 데이터 타입 확인/변환하기
 ```python
 # 타입 확인
 df.dtypes
+
+# 데이프레임 크기, 컬럼명, 데이터 타입 확인
+df.info()
 
 # 숫자형으로 타입 변환
 df['column'] = pd.to_numeric(df['column'], errors='coerce')
 df['column'] = df['column'].astype(int)
 
+
+```
+
+### 컬럼 삭제하기
+```python
+df = df.drop('col1')
+df = df.drop(['col1', 'col2'])
+
+```
+
+### 특정 컬럼만 선택하기 (subset)
+```python
+df = df[['height', 'color']]
 
 ```
 
