@@ -75,6 +75,20 @@ df = df[['height', 'color']]
 
 ```
 
+## 전처리
+
+### Null값의 총 개수 확인하기
+```python
+missing_total_by_column = wine.isna().sum()
+```
+
+df.stars.transform(lambda x: x / 1000)
+
+### 피벗 테이블
+```python
+df.pivot_table(values = 'stars', index = 'language', aggfunc = np.sum)
+```
+
 
 ### 텍스트 다루기
 
@@ -83,11 +97,13 @@ df = df[['height', 'color']]
 data.str.replace('apple', 'orange')
 ```
 
-- 특정 텍스트를 가지고 있는지
+- 특정 텍스트를 가지고 있는지 확인하기
 ```python
 s.str.contains("d")
 ```
 
+
+## 테이블 다루기
 
 ### 조인하기
 
@@ -110,17 +126,7 @@ print(pd.concat([df1, df2], axis=0))
 ```
 
 
-### Null값의 총 개수 확인하기
-```python
-missing_total_by_column = wine.isna().sum()
-```
 
-df.stars.transform(lambda x: x / 1000)
-
-### 피벗 테이블
-```python
-df.pivot_table(values = 'stars', index = 'language', aggfunc = np.sum)
-```
 
 
 # Numpy
